@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title th:text="${course.name}">A course</title>
+</head>
+<body>
+
+	<header>
+		<h1 th:text="${course.name}">A Course</h1>
+		<ul>
+			<li><a href="/courses">Courses</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<ol>
+			<li><a href="/courses">Courses</a></li>
+			<li th:text="${course.name}"></li>
+		</ol>
+		<h2 th:text="${course.desc}"></h2>
+	</main>
+
+	<footer>
+		<small>Copyright South Harmon Institute of Technology 2018</small>
+	</footer>
+
+</body>
+</html>

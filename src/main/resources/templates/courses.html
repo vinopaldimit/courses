@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>A List of All Available Courses</title>
+</head>
+<body>
+
+	<header>
+		<h1>A List of All Courses</h1>
+		<ul>
+			<li><a href="/courses">Courses</a></li>
+			<!-- "|/students/${student.id}|" -->
+			<li th:each="course: ${courses}"><a th:href="|/courses/${course.id}|" th:text="${course.name}"></a></li>
+		</ul>
+	</header>
+	
+	<main>
+		<ul>
+			<li><a href="/courses">Courses</a></li>
+			<li th:each="course: ${courses}"><a th:href="|/courses/${course.id}|" th:text="${course.name}"></a></li>
+		</ul>
+	</main>
+
+	<footer>
+		<small>Copyright South Harmon Institute of Technology 2018</small>
+	</footer>
+
+</body>
+</html>

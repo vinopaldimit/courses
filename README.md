@@ -1,11 +1,11 @@
-MODEL
--Course
--CourseRepository
+##MODEL
+- Course
+- CourseRepository
 
-CONTROLLER
--CourseController
-	-routes to /courses as well as /courses/id
+##CONTROLLER
+- CourseController
+	- routes to /courses as well as /courses/id
 
-VIEW
--courses.html
--course.html
+##VIEW
+- courses.html
+- course.html
